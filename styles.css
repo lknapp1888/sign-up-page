@@ -1,0 +1,14 @@
+.main-content {
+    display: flex;
+}
+
+.left-side-image {
+    background: url(images/eberhard-grossgasteiger-Er2NvjGWrC4-unsplash.jpg);
+    width: 40vw;
+}
+
+.right-side-container {
+    border: solid 1px black;
+    width: 60vw;
+    height: 100vh;
+}
