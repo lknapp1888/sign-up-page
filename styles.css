@@ -1,14 +1,49 @@
+* {
+    font-family: heineken;
+}
+@font-face {
+    font-family: 'heineken';
+    src: url(fonts/HEINEKEN.TTF);
+    font-style: normal;
+  }
+
 .main-content {
     display: flex;
 }
 
 .left-side-image {
     background: url(images/eberhard-grossgasteiger-Er2NvjGWrC4-unsplash.jpg);
-    width: 40vw;
+    width: 38vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.banner {
+    background-color: black;
+    opacity: .5;
+    height: 150px;
+    width: 100%;
+    position: absolute;
+    top: calc(20vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+.banner div, .banner img {
+    color: aliceblue;
+    font-size: 3rem;
+}
+
+.banner img {
+    height: 10vh;
 }
 
 .right-side-container {
     border: solid 1px black;
-    width: 60vw;
+    width: 62vw;
     height: 100vh;
 }
