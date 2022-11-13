@@ -14,11 +14,57 @@
                 <img src="images/odin-lined.png" alt="a small logo">
                 <div class="banner-name">Lewis</div>
             </div>
+            <p>Photo by <a href="https://unsplash.com/@eberhardgross?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">eberhard 🖐 grossgasteiger</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </p>
        </div>
        <div class="right-side-container">
-            <div class="form-description-container"></div>
-            <div class="form-container"></div>
-            <div class="submit-container"></div>
+            <div class="form-description-container">
+                <p>This is not a real online service. Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Quam quidem sit accusantium aut sed, porro minima fuga neque voluptates debitis eveniet eligendi 
+                    dolorum, reiciendis ad quas quis quisquam dolores aspernatur?</p>
+            </div>
+
+            <div class="form-container">
+                <form action="#" method="post" id="form-1">
+                    <div class="form-item-container">
+                        <label for="first-name">First name*</label>
+                        <input type="text" name="first-name" id="first-name" required placeholder="John">
+                        <span></span>
+                    </div>
+                    <div class="form-item-container">
+                        <label for="last-name">Last name*</label>
+                        <input type="text" name="last-name" id="last-name" required placeholder="Smith">
+                        <span></span>
+                    </div>
+                    <div class="form-item-container">
+                        <label for="email">Email*</label>
+                        <input type="email" name="email" id="email" required placeholder="example@email.com">
+                        <span></span>
+                    </div>
+                    <div class="form-item-container">
+                        <label for="phone">Phone number*</label>
+                        <input type="tel" id="phone" name="phone" placeholder=" " inputmode="numeric" required>
+                        <span></span>
+                    </div>
+                    <div class="form-item-container">
+                        <label for="password">Password*</label>
+                        <input type="password" name="password" id="password"
+                        required minlength="8" maxlength="30" placeholder="between 8 and 30 characters">
+                        <span></span>
+                    </div>
+                    <div class="form-item-container">
+                        <label for="password-confirm">Password confirmation*</label>
+                        <input type="password" name="password-confirm" id="password-confirm" 
+                        required minlength="8" maxlength="30" placeholder="between 8 and 30 characters">
+                        <span></span>
+                    </div>
+                </form>
+            </div>
+
+            <div class="submit-container">
+                <button type="submit" form="form-1">Create Account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
        </div>
    </div>
 

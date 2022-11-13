@@ -1,11 +1,21 @@
 * {
-    font-family: heineken;
+    --background-main: #e5eaed;
+    --background-secondary: rgb(255, 255, 255);
+    font-family: roboto;
 }
+
 @font-face {
-    font-family: 'heineken';
+    font-family: 'roboto';
+    src: url(fonts/Roboto-Regular.ttf);
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'heineken', sans-serif;
     src: url(fonts/HEINEKEN.TTF);
     font-style: normal;
   }
+
 
 .main-content {
     display: flex;
@@ -20,9 +30,22 @@
     position: relative;
 }
 
-.banner {
+.left-side-image p {
     background-color: black;
     opacity: .5;
+    width: 100%;
+    position: absolute;
+    top: calc(100% - 3em);
+    color: aliceblue;
+}
+
+.left-side-image p a {
+    color: aliceblue;
+}
+
+.banner {
+    background-color: black;
+    opacity: .68;
     height: 150px;
     width: 100%;
     position: absolute;
@@ -31,6 +54,7 @@
     align-items: center;
     justify-content: center;
     gap: 5%;
+    font-family: heineken;
 }
 
 .banner div, .banner img {
@@ -43,7 +67,87 @@
 }
 
 .right-side-container {
-    border: solid 1px black;
     width: 62vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.form-description-container {
+    background-color: var(--background-main);
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 20%;
+    padding-left: 10%;
+    padding-top: 10%;
+    font-size: 1.5em;
+}
+
+.form-container form {
+    background-color: var(--background-secondary);
+    display: flex;
+    flex-wrap: wrap;
+    padding: clamp(0px, 20px, 40px);
+    gap: clamp(0px, 20px, 20px);
+}
+
+.form-item-container {
+    display: flex;
+    flex-direction: column;
+    width: 37%;
+    margin-left: 8%;
+}
+
+
+.form-item-container input:invalid {
+    border: red solid 1px;
+}
+
+.form-item-container input:valid {
+    border: rgb(12, 196, 12) solid 1px;
+}
+
+.form-item-container input:focus {
+    border: rgb(47, 0, 255) solid 1px;
+    box-shadow: .5px .5px rgb(47, 0, 255);
+    outline: none;
+}
+
+.form-item-container input:placeholder-shown {
+    border: rgb(0, 0, 0) solid 1px;
+}
+
+input:valid + span::before {
+    content: "✓";
+    color: green;
+  }
+
+  input:invalid + span::before {
+    content: "✖";
+    color: red;
+  }
+
+
+.submit-container {
+    background-color: var(--background-main);
+    flex: auto;
+}
+
+.submit-container button, .submit-container p {
+    margin-left: 8%;
+    margin-top: 3%;
+}
+
+.submit-container button {
+    padding: 2rem 6rem;
+    border-radius: 8px;
+    font-size: 1.5em;
+    background-color: var(--background-secondary);
+}
+
+.submit-container button:hover {
+    background-color: rgb(223, 223, 223);
 }
